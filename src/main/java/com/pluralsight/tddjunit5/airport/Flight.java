@@ -19,6 +19,14 @@ public abstract class Flight {
         return Collections.unmodifiableSet(passengersSet);
     }
 
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
     public abstract boolean addPassenger(Passenger passenger);
 
     public abstract boolean removePassenger(Passenger passenger);
